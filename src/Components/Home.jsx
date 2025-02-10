@@ -14,27 +14,20 @@ function Home() {
 
       {/* this is Home page  */}
 
-      <HeroPage className="bg-[#0A0A0A]" />
+      <HeroPage className="bg-[#0A0A0A]   decoration-red-100" />
 
 
 
       {/* Who im page */}
 
-{/* AboutUs */}
-
-
       <AboutMe className="bg-[#0A0A0A]" />
 
       {/* Skill */}
-   
       <Skill className="bg-[#0A0A0A]" />
       {/* Project */}
-     
       <Project className="bg-[#0A0A0A]" />
-      
-      {/* Contact page */}
-    
 
+      {/* Contact page */}
 
       <ContactUs className="bg-[#0A0A0A]" />
 
@@ -42,9 +35,7 @@ function Home() {
       {/* Hire me page */}
       
     
-      
-      <HireMe className="bg-[#0A0A0A] mt-40" />
-      
+      <HireMe className="bg-[#0A0A0A] h-screen mt-4" />
         
         {/* Footer page */}
       <Footer className="bg-[#0A0A0A] " />

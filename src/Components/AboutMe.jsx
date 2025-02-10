@@ -25,7 +25,7 @@ function AboutMe() {
             <div className="mr-10 h-full">
               <img
                 className="w-full h-5/6"
-                src="./src/assets/AboutImg.jpeg"
+                src="/AboutImg.jpeg"
                 alt="image of myself"
               />
             </div>

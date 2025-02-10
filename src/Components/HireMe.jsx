@@ -5,9 +5,10 @@ import Navbar from "../Components/NavBar";
 const HireMe = () => {
   return (
     <>
-
-<div className="text-center text-white mt-10">
-        <h2 className="decoration-transparent text-4xl md:text-5xl font-bold">Hire Me</h2>
+      <div className="text-center text-white mt-10">
+        <h2 className="decoration-transparent text-4xl md:text-5xl font-bold">
+          Hire Me
+        </h2>
         <p className="mt-4 text-md md:text-lg max-w-2xl mx-auto">
           Explore a selection of my latest projects. Each project showcases my
           skills and dedication to delivering high-quality results.
@@ -17,11 +18,8 @@ const HireMe = () => {
         </div>
       </div>
 
-
-
       <div className="w-full h-screen flex flex-col justify-center items-center mt-14 mr-10 ">
         {/* <!-- Top Section --> */}
-
 
         {/* <!-- Content Section --> */}
         <div className="relative w-[80%] md:w-[70%] mx-auto mt-6 h-5/6 ">

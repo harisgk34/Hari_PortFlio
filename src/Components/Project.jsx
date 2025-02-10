@@ -5,22 +5,22 @@ const Project = () => {
     {
       id: 1,
       title: "Project One",
-      imgSrc: "./src/assets/Qr code.PNG" },
+      imgSrc: "/Qr code.PNG" },
     {
       id: 2,
       title: "Project Two",
       imgSrc:
-      "./src/assets/nastraImg.PNG"   },
+      "/nastraImg.PNG"   },
     {
       id: 3,
       title: "Project Three",
       imgSrc:
-      "./src/assets/Greendon.PNG"  },
+      "/Greendon.PNG"  },
     {
       id: 4,
       title: "Project Four",
       imgSrc:
-      "./src/assets/Act-ToDo.PNG" },
+      "/Act-Todo.PNG" },
   ];
 
   return (
