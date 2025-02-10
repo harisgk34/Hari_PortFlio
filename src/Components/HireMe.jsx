@@ -29,7 +29,7 @@ const HireMe = () => {
             {/* <!-- Profile Image --> */}
             <img
               className="h-70 w-auto sm:w-[16rem] rounded-full shadow-green-500 shadow-2xl "
-              src="./src/assets/HireMe.jpeg"
+              src="HireMe.jpeg"
               alt="Profile Image"
             />
 
