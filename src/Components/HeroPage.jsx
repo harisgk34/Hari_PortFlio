@@ -30,7 +30,7 @@ function HeroPage() {
   <div className="h-3/5 p-4 rounded-lg flex justify-end w-full relative animate-fadeIn">
         <div className="w-1/2 h-2/3  ">
             <img
-            src="./src/assets/pImg.jpeg"
+            src="./pImg.jpeg"
             alt="Profile"
             className="w-3/4 h flex justify-center  h-3/4 rounded-full button top-4 my-3 mr-9   "
           />
