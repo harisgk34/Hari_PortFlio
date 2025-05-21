@@ -14,31 +14,31 @@ function Home() {
 
       {/* this is Home page  */}
 
-      <HeroPage className="bg-[#0A0A0A]   decoration-red-100" />
+      <HeroPage className="bg-[#0A0A0A]   decoration-red-100 md:"  />
 
 
 
       {/* Who im page */}
 
-      <AboutMe className="bg-[#0A0A0A]" />
+      <AboutMe className="bg-[#0A0A0A] static" />
 
       {/* Skill */}
-      <Skill className="bg-[#0A0A0A]" />
+      <Skill className="bg-[#0A0A0A] static" />
       {/* Project */}
-      <Project className="bg-[#0A0A0A]" />
+      <Project className="bg-[#0A0A0A] static" />
 
       {/* Contact page */}
 
-      <ContactUs className="bg-[#0A0A0A]" />
+      <ContactUs className="bg-[#0A0A0A] static" />
 
 
       {/* Hire me page */}
       
     
-      <HireMe className="bg-[#0A0A0A] h-screen mt-4" />
+      <HireMe className=" bg-[#0A0A0A] h-screen  mt-4" />
         
         {/* Footer page */}
-      <Footer className="bg-[#0A0A0A] " />
+      {/* <Footer className="bg-[#0A0A0A] " /> */}
     </div>
   );
 }

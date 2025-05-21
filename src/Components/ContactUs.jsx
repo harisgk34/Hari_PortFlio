@@ -1,11 +1,46 @@
 
 
 import React from 'react';
+import { useState } from "react";
 
 function ContactUs() {
+const [formData, setformData] = useState(
+  {
+    fistname:'',
+    lastname :'',
+    email:'',
+    msg:''
+
+  }
+)
+
+function handleChange(e) {
+
+  setformData({
+    ...formData,
+    [e.target.name]: e.target.value
+  });
+  console.log(formData);
+  
+};
+
+function handlesubmit(e) {
+
+  e.preventDefault();
+
+  const {fistname, lastname,email,msg} = formData
+
+  
+
+  const message = `Hi Hariharan! 👋\n\nMy name is ${fistname} ${lastname}.\nEmail: ${email}\n\n${msg} I'm interested in your services. Please get in touch!`;
+  const url = `https://wa.me/918870575425?text=${encodeURIComponent(message)}`;
+  
+
+  window.open(url,'_black');
+}
+
   return (
     <>
-    
       <div className="text-center text-white mt-10">
         <h2 className="decoration-transparent text-4xl md:text-5xl font-bold">Get IN Touch</h2>
         <p className="mt-4 text-md md:text-lg max-w-2xl mx-auto">
@@ -16,9 +51,6 @@ function ContactUs() {
           <hr className="w-20 border-[3px] border-green-400 mx-auto" />
         </div>
       </div>
-
-
-
 
 
 
@@ -52,7 +84,7 @@ function ContactUs() {
               <path d="M12 2C8.134 2 5 5.134 5 9c0 4.766 5.374 11.659 6.086 12.511.237.278.591.439.914.439s.677-.161.914-.439C13.626 20.659 19 13.766 19 9c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"></path>
             </svg>
             <span className="text-sm">
-              House #14, Street #12, Darulaman Road, Kabul, Afghanistan.
+              Pollachi,Coimbatore,TamilNadu, India.
             </span>
           </div>
 
@@ -67,7 +99,7 @@ function ContactUs() {
             >
               <path d="M22 16.92v3.49a2.6 2.6 0 0 1-2.85 2.6c-13.5-1.18-17.83-13-18.83-18.84A2.6 2.6 0 0 1 3.82.5h3.5a2.6 2.6 0 0 1 2.6 2.2c.22 1.54.75 3.58 1.5 5.17a2.6 2.6 0 0 1-.58 2.87L8.3 13.2a16.85 16.85 0 0 0 6.5 6.5l2.47-2.47a2.6 2.6 0 0 1 2.87-.58c1.59.75 3.63 1.28 5.17 1.5a2.6 2.6 0 0 1 2.2 2.6z"></path>
             </svg>
-            <span className="text-sm">+93 123 456 789</span>
+            <span className="text-sm">+918870575425</span>
           </div>
 
           {/* 24/7 Support */}
@@ -99,6 +131,8 @@ function ContactUs() {
                 First Name
               </label>
               <input
+              onChange={handleChange}
+              name='fistname'
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
@@ -114,6 +148,8 @@ function ContactUs() {
                 Last Name
               </label>
               <input
+              name='lastname'
+              onChange={handleChange}
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
                 type="text"
@@ -131,6 +167,8 @@ function ContactUs() {
                 Email Address
               </label>
               <input
+              name='email'
+              onChange={handleChange}
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-email"
                 type="email"
@@ -148,6 +186,8 @@ function ContactUs() {
                 Your Message
               </label>
               <textarea
+              name='msg'
+              onChange={handleChange}
                 rows="10"
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               ></textarea>
@@ -160,6 +200,7 @@ function ContactUs() {
               <span className="text-sm">Send me your newsletter!</span>
             </label>
             <button
+            onClick={handlesubmit}
               className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
               type="submit"
             >

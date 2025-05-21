@@ -9,7 +9,8 @@ body {
   font-family: "Poppins", sans-serif; 
   background: #0A0A0A; 
   color: #ffffff;
-  height: 100vh;
+  
+  
   
 }
 
@@ -115,6 +116,37 @@ button:hover {
     opacity: 1;
   }
 }
+
+
+@media screen and (max-width: 767px) {
+  .profile{
+    display: none;
+  
+    padding-top: 40%;
+
+  }
+  .hero{
+    display: inline-block;
+    margin-top: 36%;
+  }
+  .about{
+    /* margin-top: 21.5rem; */
+    margin-top: -3.5rem;
+  } 
+  .skill {
+    margin-top: 156%;
+}
+
+  hero {
+    display: inline-block;
+    margin-top: 36%;
+}
+/* footer{} */
+
+}
+  
+
+
 
 
 

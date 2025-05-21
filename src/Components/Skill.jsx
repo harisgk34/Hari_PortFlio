@@ -46,7 +46,7 @@ const Skill = () => {
 
   return (
     <>
-       <div className="text-center text-white mt-10">
+       <div className=" skill text-center text-white mt-10">
         <h2 className="decoration-transparent text-4xl md:text-5xl font-bold">Skills</h2>
         <p className="mt-4 text-md md:text-lg max-w-2xl mx-auto">
           Explore a selection of my latest projects. Each project showcases my

@@ -3,7 +3,7 @@ import React from "react";
 function AboutMe() {
   return (
     <>
-      <div className="text-center text-white mt-10">
+      <div className=" about text-center text-white mt-10 pt-20">
         <h2 className="decoration-transparent text-4xl md:text-5xl font-bold">
           Who I'M
         </h2>
@@ -63,7 +63,7 @@ function AboutMe() {
                 <a
                   rel="noopener"
                   target="_blank"
-                  href="https://github.com/iam-aydin"
+                  href="https://github.com/harisgk34"
                   className="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white"
                 >
                   <img
@@ -78,7 +78,8 @@ function AboutMe() {
                 <a
                   rel="noopener"
                   target="_blank"
-                  href="https://www.linkedin.com/in/aydin-vesali-moghaddam-82a860275/"
+                  href="https://www.linkedin.com/in/hari-haran-8ab605317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+
                   className="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white"
                 >
                   <img
@@ -93,7 +94,7 @@ function AboutMe() {
                 <a
                   rel="noopener"
                   target="_blank"
-                  href="https://twitter.com/ichbinaydin"
+                  href="https://twitter.com/"
                   className="bg-gray-800 rounded-lg p-5 w-64 flex  items-center gap-2 text-white"
                 >
                   <img
