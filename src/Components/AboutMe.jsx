@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <>
+    <div className="">
       <div className=" about text-center text-white mt-10 pt-20">
         <h2 className="decoration-transparent text-4xl md:text-5xl font-bold">
           Who I'M
@@ -111,7 +111,8 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    </>
+      
+    </div>
   );
 }
 

@@ -19,8 +19,9 @@ function Home() {
 
 
       {/* Who im page */}
-
+      <div className="about-m">
       <AboutMe className="bg-[#0A0A0A] static " />
+      </div>
 
       {/* Skill */}
       <div className="ski ">

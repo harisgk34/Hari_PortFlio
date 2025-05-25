@@ -1,5 +1,8 @@
 @media screen and (max-width:480px) {
     .about{
+        margin-top: 4%;
+    }
+    .about-m{
         margin-top: 80%;
     }
     .ski{
